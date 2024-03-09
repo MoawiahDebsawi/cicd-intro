@@ -23,7 +23,7 @@ phases:
       - mvn --version
       - python -V
 
-  build: # Build Docker image,tag it with the commit sha, push the docker image to ECR
+  build: # Build Docker image ,tag it with the commit sha, push the docker image to ECR
     commands:
       - chmod +x ./aws-cicd/scripts/build.sh
       - ./aws-cicd/scripts/build.sh
